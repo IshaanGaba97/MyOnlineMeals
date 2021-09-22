@@ -1,0 +1,241 @@
+/* css reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+
+/*navigation bar: logo and image */
+#logo{
+    margin: 2px 25px;
+}
+
+#logo img{
+    height: 55px;
+    margin: 4px 10px;
+    border-radius: 10px;
+}
+/* list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Home Section  */
+/* making a flex box of h1 p p btn  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to apply background image */
+#home::before{
+    content: "";
+    background: url("../bg1.jpg") no-repeat center center/cover ;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: white;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#home p{
+    color: white;
+    align-items: center;
+    font-size: 1.35rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* services container  */
+#services{
+    margin: 0px 30px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 23px;
+    border-radius: 23px;
+    margin: 0px 10px;
+    background-color: #e0e0e0;
+}
+#services .box img{
+    height: 140px;
+    display: block;
+    margin: auto;
+    z-index: -1;
+}
+
+#services .box p{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* clients section  */
+#client-section{
+    position: relative;
+    margin: 10px 0px ;
+    z-index: -2;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;                                   /**/
+    background: url("../bg2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+    margin: 0px 10px;
+}
+    
+/* contact section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../bg3.jpg") no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold ;
+}
+
+
+#contact-box input, #contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+/* footer section  */
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px 25px;
+}
+
+/* utility class : headings*/
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    color:white;
+    margin: 18px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
