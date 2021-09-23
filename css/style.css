@@ -124,7 +124,7 @@ html{
     background-color: #e0e0e0;
 }
 #services .box img{
-    border-radius: 10px;
+    border-radius: 12px;
     height: 140px;
     display: block;
     margin: auto;
@@ -158,7 +158,7 @@ html{
     align-items: center;
 }
 #clients img{
-    border-radius: 14px;
+    border-radius: 15px;
     height: 124px;
 }
 
